@@ -52,6 +52,8 @@ const IPRegistryABI = [
 // Address found after running solidity code
 const CONTRACT_ADDRESS = "0x298B0831b7a81fbA33a4BD45Fdbddb9c3db69b4C"; 
 
+
+
 async function calculateHash(file) {
   const arrayBuffer = await file.arrayBuffer();
   const hashBuffer = await crypto.subtle.digest("SHA-256", arrayBuffer);
